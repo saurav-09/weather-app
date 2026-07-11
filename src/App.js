@@ -28,7 +28,6 @@ import {
 import { ALL_DESCRIPTIONS } from './utilities/DateConstants';
 
 import { ReactComponent as SplashIcon } from './assets/splash-icon.svg';
-import Logo from './assets/logo.png';
 
 function App() {
   const [todayWeather, setTodayWeather] = useState(null);
@@ -308,25 +307,36 @@ function App() {
             }}
           >
             <Box
-              component="img"
-              src={Logo}
-              alt="Weather application logo"
-              sx={{
-                height: {
-                  xs: '16px',
-                  sm: '22px',
-                  md: '26px',
-                },
-
-                maxWidth: {
-                  xs: '90px',
-                  sm: '140px',
-                },
-
-                width: 'auto',
-                objectFit: 'contain',
-              }}
-            />
+  sx={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  <Typography
+    sx={{
+      fontFamily: 'Poppins',
+      fontWeight: 700,
+      fontSize: {
+        xs: '18px',
+        sm: '22px',
+        md: '26px',
+      },
+      color: '#04C4E0',
+      letterSpacing: '-0.5px',
+      lineHeight: 1,
+    }}
+  >
+    Sky
+    <Box
+      component="span"
+      sx={{
+        color: '#fff',
+      }}
+    >
+      Cast
+    </Box>
+  </Typography>
+</Box>
 
             <Box
               sx={{
