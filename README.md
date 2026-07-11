@@ -8,7 +8,7 @@ Users can search for cities around the world and view current weather conditions
 
 ## 🚀 Live Demo
 
-https://weather-app-eta-seven-gib6mm2bgz.vercel.app
+https://skycast-weather-info.vercel.app
 
 ## ✨ Features
 
